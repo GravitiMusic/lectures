@@ -14,9 +14,7 @@
 ;
 
 (define (length xs)
-  (if (null? xs)
-      0
-      (+ 1 (length (cdr xs)))))
+  'not-implemented)
 
 ;
 ; Compute the sum of a list of integers
@@ -25,9 +23,7 @@
 ;   (sum '(1 2 3 4)) => 10
 
 (define (sum xs)
-  (if (null? xs)
-      0
-      (+ (car xs) (sum (cdr xs)))))
+  'not-implemented)
 
 ;
 ; Calculate the squares of a list of integers. Make the function non-recursive.
@@ -37,8 +33,7 @@
 ;
 
 (define (squares xs)
-  (map (lambda (x) (* x x)) xs))
-  
+  'not-implemented)
 
 ; Concatenate the lists l1 and l2 (append l2 to l1)
 ;   The concatention of l1 and l2 is equal to l2 if l1 is null.
@@ -51,9 +46,7 @@
 ;
 
 (define (concat xs ys)
-  (if (null? xs)
-      ys
-      (list* (car xs) (concat (cdr xs) ys))))
+  'not-implemented)
 
 ; Compose two functions. That is, ((compose f g) x) should be the same as
 ; (f (g x))
@@ -62,4 +55,4 @@
 ;   ((compose square square) 10) -> 10000
 
 (define (compose f g)
-  (lambda (x) (f (g x))))
+  'not-implemented)
